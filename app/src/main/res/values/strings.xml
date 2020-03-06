@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FlowerChooser</string>
+    <string name="add_1">Add 1</string>
+    <string name="add_2">Add 2</string>
+    <string name="remove_1">Remove 1</string>
+    <string name="remove_2">remove 2</string>
+    <string name="add_flower">Add flower</string>
+    <string name="flower_name">Flower name</string>
+    <string name="flower_image_url">Flower image URL</string>
+    <string name="flower_price">Flower price</string>
+    <string name="fill_all_fields">Please, fill all the required fields!</string>
+    <string name="add_flower_first">Add flower first!</string>
+    <string name="nothing_to_remove">Nothing to remove!</string>
+    <string name="flower_added_success">Flower successfully added!</string>
+</resources>

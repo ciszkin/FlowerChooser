@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/topFragmentPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/bottomFragmentPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topFragmentPlace" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addTopFragment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/ButtonPanel"/>
+
+        <Button
+            android:id="@+id/addBottomFragment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addTopFragment"
+            style="@style/ButtonPanel"/>
+
+        <Button
+            android:id="@+id/removeTopFragment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/ButtonPanel"/>
+
+        <Button
+            android:id="@+id/removeBottomFragment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/removeTopFragment"
+            style="@style/ButtonPanel"/>
+
+        <Button
+            android:id="@+id/addFlower"
+            style="@style/ButtonPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_flower"
+            app:layout_constraintEnd_toStartOf="@+id/removeBottomFragment"
+            app:layout_constraintStart_toEndOf="@+id/addBottomFragment"
+            app:layout_constraintTop_toBottomOf="@+id/addTopFragment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
